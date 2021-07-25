@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Prompt:wght@500&display=swap');
+
+$bg-color: #232323;
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $bg-color !important;
+}
+
+.mytitle{
+    font-family: 'Prompt', sans-serif;
+    color: white;
+}
+
+.mysectiontitle{
+    font-size: 35pt;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.mytext{
+    font-family: 'Mulish', sans-serif;
+    color: white;
+}
+
+nav{
+    font-size: 30pt;
+    padding-top: 20vh;
+    margin-left: 5%;
+    position: fixed;
+    
+    a{
+        color: white;
+    }
+    a:hover{
+        color: orange;
+    }
+}
+
+.hero{
+    padding: 0;
+    height: 120vh;
+    h1,h2{
+        font-size: 60pt;
+    }
+
+    span{
+        color: orange;
+    }
+
+    #neslihan{
+        position: absolute;
+        top: 30vh;
+        left: 21%;
+    }
+
+    #minaz{
+        position: absolute;
+        top: 40vh;
+        left: 30%;
+    }
+
+    #fe-dev{
+        position: absolute;
+        top: 50vh;
+        left: 20%;
+    }
+
+    #logo{
+        position: absolute;
+        top: -15vh;
+        left: 45%;
+        width: 35%;
+    }
+
+    blockquote{
+        position: absolute;
+        top: 63vh;
+        left: 30%;
+        font-size: 30pt;
+        font-style: italic;
+        border-left: solid;
+        border-color: orange;
+    }
+}
+
+.mycontent{
+    min-height: 100vh;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ 
+.scrolltitle {
+    list-style: none;
+    border-bottom: 0;
+    border-top:0;
+  
+  .hidden {
+    border-bottom: 1px solid $bg-color;
+  }
+
+  li{
+    float: left;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    max-width: 2em;
+     
+  }
+}
+
+  .scrolltitle.hidden li.ghost {
+    opacity: 0;
+    max-width: 0;
+  }
+
+
+  
+  
+
+
+
+
