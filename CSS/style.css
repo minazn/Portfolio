@@ -91,17 +91,17 @@ nav a:hover {
   margin-right: auto;
 }
 
-.scrolltitle {
+.mycontent .scrolltitle {
   list-style: none;
   border-bottom: 0;
   border-top: 0;
 }
 
-.scrolltitle .hidden {
+.mycontent .scrolltitle .hidden {
   border-bottom: 1px solid #232323;
 }
 
-.scrolltitle li {
+.mycontent .scrolltitle li {
   float: left;
   opacity: 1;
   -webkit-transition: all 0.5s ease-in-out;
@@ -109,8 +109,23 @@ nav a:hover {
   max-width: 2em;
 }
 
-.scrolltitle.hidden li.ghost {
+.mycontent .scrolltitle.hidden li.ghost {
   opacity: 0;
   max-width: 0;
+}
+
+.mycontent .thumbnails {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.mycontent .thumbnails img {
+  width: 50%;
+  border-style: solid;
+  border-color: orange;
+  border-width: 7px;
+  padding: 1em;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
