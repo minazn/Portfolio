@@ -1,0 +1,74 @@
+@media only screen and (min-width: 765px) and (max-width: 992px) {
+  #large-nav {
+    display: none !important;
+  }
+  header .hamburger-shell {
+    margin: 0;
+    position: fixed;
+    overflow: hidden;
+    width: 10%;
+    height: 5vh;
+    overflow: auto;
+    left: calc(100% - 100px);
+    top: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: solid;
+    color: orange;
+    padding: 1%;
+  }
+  header .top, header .middle, header .bottom {
+    position: fixed;
+    width: 7%;
+    height: 5px;
+    background-color: orange;
+    -webkit-transition: all 350ms ease-in-out;
+    transition: all 350ms ease-in-out;
+    top: 3%;
+  }
+  header .middle {
+    top: 4%;
+  }
+  header .bottom {
+    top: 5%;
+  }
+  header #hamburger {
+    position: fixed;
+    left: calc(100% - 252px);
+    top: 10px;
+    color: white;
+    width: 200px;
+    font-size: 20pt;
+    text-align: right;
+  }
+  header #hamburger .hide-hamb {
+    margin-top: -190%;
+  }
+  header .menu-open > .hide-hamb {
+    margin-top: 60% !important;
+  }
+  header .menu-open .top, header .menu-open .middle, header .menu-open .bottom {
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+    background-color: white;
+    top: 4%;
+    height: 2px;
+  }
+  header .menu-open .middle {
+    transform: rotate(-225deg);
+    -webkit-transform: rotate(-225deg);
+    background-color: white;
+    height: 2px;
+  }
+  .hero {
+    margin-top: 15em !important;
+  }
+  .hero h1, .hero h2 {
+    font-size: 40pt !important;
+  }
+  .hero blockquote {
+    width: 60% !important;
+    font-size: 20pt !important;
+  }
+}
+/*# sourceMappingURL=medium.css.map */

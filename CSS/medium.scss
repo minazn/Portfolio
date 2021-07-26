@@ -1,0 +1,92 @@
+@media only screen and (min-width: 765px) and (max-width: 992px){
+
+#large-nav{
+    display: none !important;
+}
+
+
+header{
+    .hamburger-shell {
+        margin: 0;
+        position: fixed;
+        overflow: hidden;
+        width: 10%;
+        height: 5vh;
+        overflow: auto;
+        left: calc(100% - 100px);
+        top: 20px;
+        cursor: pointer;
+        background: transparent;
+        border: solid;
+        color: orange;
+        padding: 1%;
+    }
+
+    .top{
+        position: fixed;
+        width: 7%;
+        height: 5px;
+        background-color: orange;
+        transition: all 350ms ease-in-out;
+        top: 3%;
+    }
+
+    .middle{
+        @extend .top;
+        top: 4%;
+    }
+
+    .bottom{
+        @extend .top;
+        top: 5%;
+    }
+
+    #hamburger {
+        position: fixed;
+        left: calc(100% - 252px);
+        top: 10px;
+        color: white;       
+        width: 200px;
+        font-size: 20pt;
+        text-align: right;
+
+        .hide-hamb{
+            margin-top: -190%;
+        }
+        
+    }
+
+    .menu-open > .hide-hamb{
+        margin-top: 60% !important;
+    }
+
+    .menu-open .top {
+        transform: rotate(225deg);
+        -webkit-transform: rotate(225deg);
+        background-color: white;
+        top: 4%;
+        height: 2px;
+    }
+    
+    .menu-open .middle {
+        transform: rotate(-225deg);
+        -webkit-transform: rotate(-225deg);
+        background-color: white;
+        height: 2px;
+    }
+}
+
+.hero{
+    margin-top: 15em !important;
+    h1,h2{
+        font-size: 40pt !important;
+    }
+
+    blockquote{
+        width: 60% !important;
+        font-size: 20pt !important; 
+    }
+}
+
+
+}

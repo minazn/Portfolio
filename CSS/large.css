@@ -1,0 +1,12 @@
+@media only screen and (min-width: 993px) {
+  .bg-cover {
+    display: none;
+  }
+  header #hamburger {
+    display: none !important;
+  }
+  header button {
+    display: none;
+  }
+}
+/*# sourceMappingURL=large.css.map */

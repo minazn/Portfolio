@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Prompt:wght@500&display=swap");
+@import url("./large.css");
+@import url("/CSS/medium.css    ");
 body {
   margin: 0;
   padding: 0;
@@ -30,7 +32,7 @@ a:hover {
   color: orange !important;
 }
 
-nav {
+#large-nav {
   font-size: 30pt;
   padding-top: 20vh;
   margin-left: 5%;

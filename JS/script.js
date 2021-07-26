@@ -1,7 +1,14 @@
+const titles = ["Portfolio","Technologys","About me"];
+const titles_id = ["#portfolio","#technologys", "#about"];
+
+function toggleMenu() {
+	$('.hamburger-shell').toggleClass('menu-open');
+  $('#hamburger').toggleClass('menu-open');
+}
+
 $(function() {
 
-  const titles = ["Portfolio","Technologys","About me"];
-  const titles_id = ["#portfolio","#technologys", "#about"];
+  $('.hamburger-shell').click(toggleMenu);
 
   for (let i=0; i<titles.length; i++){
     let split_title = titles[i].split("");
