@@ -14,11 +14,20 @@ body {
   font-size: 35pt;
   text-align: center;
   letter-spacing: 3px;
+  padding-top: 20%;
 }
 
-.mytext {
-  font-family: 'Mulish', sans-serif;
-  color: white;
+.mytext, a {
+  font-family: 'Mulish', sans-serif !important;
+  color: white !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: orange !important;
 }
 
 nav {
@@ -28,17 +37,10 @@ nav {
   position: fixed;
 }
 
-nav a {
-  color: white;
-}
-
-nav a:hover {
-  color: orange;
-}
-
 .hero {
-  padding: 0;
+  padding: 7em 0 0 0;
   height: 120vh;
+  margin-bottom: 0;
 }
 
 .hero h1, .hero h2 {
@@ -49,35 +51,16 @@ nav a:hover {
   color: orange;
 }
 
-.hero #neslihan {
-  position: absolute;
-  top: 30vh;
-  left: 21%;
-}
-
-.hero #minaz {
-  position: absolute;
-  top: 40vh;
-  left: 30%;
-}
-
-.hero #fe-dev {
-  position: absolute;
-  top: 50vh;
-  left: 20%;
-}
-
 .hero #logo {
-  position: absolute;
-  top: -15vh;
-  left: 45%;
-  width: 35%;
+  width: 60%;
 }
 
 .hero blockquote {
-  position: absolute;
-  top: 63vh;
-  left: 30%;
+  width: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 34%;
   font-size: 30pt;
   font-style: italic;
   border-left: solid;
@@ -127,5 +110,21 @@ nav a:hover {
   border-width: 7px;
   padding: 1em;
   background-color: white;
+}
+
+.mycontent #technology-list {
+  width: 60%;
+  margin: 10% auto 0 auto;
+}
+
+.mycontent #technology-list a {
+  font-size: 20pt;
+  font-weight: bold;
+  border: solid;
+  padding: 1rem;
+}
+
+footer {
+  margin-top: 600px;
 }
 /*# sourceMappingURL=style.css.map */

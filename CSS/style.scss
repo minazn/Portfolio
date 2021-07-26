@@ -17,11 +17,21 @@ body{
     font-size: 35pt;
     text-align: center;
     letter-spacing: 3px;
+    padding-top: 20%;
 }
 
 .mytext{
-    font-family: 'Mulish', sans-serif;
-    color: white;
+    font-family: 'Mulish', sans-serif !important;
+    color: white !important;
+}
+
+a{
+   @extend .mytext;
+   text-decoration: none !important;
+}
+
+a:hover{
+    color: orange !important;
 }
 
 nav{
@@ -29,18 +39,13 @@ nav{
     padding-top: 20vh;
     margin-left: 5%;
     position: fixed;
-    
-    a{
-        color: white;
-    }
-    a:hover{
-        color: orange;
-    }
+
 }
 
 .hero{
-    padding: 0;
+    padding: 7em 0 0 0;
     height: 120vh;
+    margin-bottom: 0;
     h1,h2{
         font-size: 60pt;
     }
@@ -49,35 +54,14 @@ nav{
         color: orange;
     }
 
-    #neslihan{
-        position: absolute;
-        top: 30vh;
-        left: 21%;
-    }
-
-    #minaz{
-        position: absolute;
-        top: 40vh;
-        left: 30%;
-    }
-
-    #fe-dev{
-        position: absolute;
-        top: 50vh;
-        left: 20%;
-    }
-
     #logo{
-        position: absolute;
-        top: -15vh;
-        left: 45%;
-        width: 35%;
+        width: 60%;
     }
 
     blockquote{
-        position: absolute;
-        top: 63vh;
-        left: 30%;
+        width: 50%;
+        display: inline-flex;
+        margin-left: 34%;
         font-size: 30pt;
         font-style: italic;
         border-left: solid;
@@ -129,8 +113,24 @@ nav{
         }
     }
 
+    #technology-list{
+        width: 60%;
+        margin: 10% auto 0 auto;
+
+        a{
+            font-size: 20pt;
+            font-weight: bold;
+            border: solid;
+            padding: 1rem;
+
+        }
+    }
+
 }
 
+footer{
+    margin-top: 600px;
+}
  
 
 

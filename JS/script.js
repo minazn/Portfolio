@@ -14,17 +14,31 @@ $(function() {
       }
     }
     $(titles_id[i]).append(`<li>]</li>`);
+
   }
 
-    var text = $(".scrolltitle");
     $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-      if (scroll < 400) {
-        text.addClass("hidden");
-      } else {
-        text.removeClass("hidden");
+      var scroll = $(window).scrollTop() + 400;
+      for (let val of titles_id){
+        if (scroll >= $(val).position().top){
+          $(val).removeClass("hidden");
+        }else{
+          $(val).addClass("hidden");
+        }
       }
     });
+
+    // $("#technology-tags").tagcloud({
+    //     size: {
+    //       start:12,
+    //       end: 55,
+    //       unit: "pt"
+    //     },
+    //     color: {
+    //       start: "#aaa",
+    //       end: "#000"
+    //     }
+    // })
   });
 
  
