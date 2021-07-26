@@ -14,15 +14,19 @@ body {
 }
 
 .mysectiontitle {
-  font-size: 35pt;
+  font-size: 50pt;
   text-align: center;
   letter-spacing: 3px;
   padding-top: 40%;
 }
 
-.mysectiontitle .bracket {
-  font-size: 70pt;
-  font-weight: 100;
+.mysectiontitle .dot {
+  height: 25px;
+  width: 25px;
+  background-color: orange;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 27pt 10px 0 0;
 }
 
 .mytext, a {
@@ -51,7 +55,7 @@ a:hover {
 }
 
 .hero h1, .hero h2 {
-  font-size: 60pt;
+  font-size: 70pt;
 }
 
 .hero span {

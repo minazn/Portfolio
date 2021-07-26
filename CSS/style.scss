@@ -17,14 +17,18 @@ body{
 }
 
 .mysectiontitle{
-    font-size: 35pt;
+    font-size: 50pt;
     text-align: center;
     letter-spacing: 3px;
     padding-top: 40%;
 
-    .bracket{
-        font-size: 70pt;
-        font-weight: 100;
+    .dot{
+        height: 25px;
+        width: 25px;
+        background-color: orange;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 27pt 10px 0 0;
     }
 }
 
@@ -54,7 +58,7 @@ a:hover{
     padding: 7em 0 0 0;
     margin-bottom: 0;
     h1,h2{
-        font-size: 60pt;
+        font-size: 70pt;
     }
 
     span{
