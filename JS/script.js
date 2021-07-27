@@ -1,71 +1,48 @@
 const titles = ["Portfolio","What are Codereviews?","Technologys","About me"];
 const titles_id = ["#portfolio","#codereview","#technologys", "#about"];
 
-const technologys = [{
-  title: "C/C++",
-  id: "c",
-  description: "1"
-},{
-  title: "C/C++",
-  id: "c++",
-  description: "2"
-},{
-  title: "Matlab",
-  id: "matlab",
-  description: "3"
-},{
-  title: "R",
-  id: "r",
-  description: "4"
-},{
-  title: "LaTex",
-  id: "latex",
-  description: "5"
-},{
-  title: "Maple",
-  id: "maple",
-  description: ""
-},{
-  title: "Wordpress",
-  id: "wordpress",
-  description: ""
-},{
-  title: "Angular",
-  id: "angular",
-  description: ""
-},{
-  title: "HTML",
-  id: "html",
-  description: ""
-},{
-  title: "JavaScript",
-  id: "js",
-  description: ""
-},{
-  title: "TypeScript",
-  id: "ts",
-  description: ""
-},{
-  title: "CSS3 & SCSS",
-  id: "css",
-  description: ""
-}];
+var technology_list = [];
+
+class Technology {
+  constructor(title, id, description) {
+    this.title = title;
+    this.id = id;
+    this.description = description;
+    technology_list.push(this);
+  }
+
+  writeTechnologyCard() {
+    document.getElementById("technology-title").innerHTML = this.title;
+    document.getElementById("technology-description").innerHTML = this.description;
+  }
+}
+
+new Technology("C/C++", "c", "Lorem ipsum");
+new Technology("C/C++", "c++", "Si ipsum");
+new Technology("Matlab","matlab","Tada");
+new Technology("R", "r", "yes");
+new Technology("LaTex", "latex", "5");
+new Technology("Maple", "maple", "no");
+new Technology("Wordpress", "wordpress", "wp");
+new Technology("Angular", "angular", "angular");
+new Technology("HTML", "html", "html");
+new Technology("JavaScript", "js", "JS");
+new Technology("TypeScript", "ts", "TS");
+new Technology("CSS3 & SCSS", "css", "css");
+new Technology("VBA", "vba", "vba");
+new Technology("Jimdo", "jimdo", "jimdo");
+
+
+
+for (let val of technology_list){
+  document.getElementById(val.id).addEventListener("click", function(){
+   val.writeTechnologyCard()});
+}
 
 // responsive hamburger navbar
 function toggleMenu() {
 	$('.hamburger-shell').toggleClass('menu-open');
   $('#hamburger').toggleClass('menu-open');
-}
-
-function writeTechnologyDescription(obj){
-  document.getElementById("technology-title").innerHTML = obj.title;
-
-  document.getElementById("technology-description").innerHTML = obj.description;
-}
-
-for (let val of technologys){
-  document.getElementById(val.id).addEventListener("click", function(){
-    writeTechnologyDescription(val)});
 }
 
 $(function() {
@@ -99,7 +76,6 @@ $(function() {
 
   });
 
- console.log(technologys[0].id);
 
  
  
