@@ -124,7 +124,7 @@ a:hover{
         background: orange;
         box-shadow: 0 15px 50px rgba(0,0,0,.5);
         display: inline-block;
-        width: 50%;
+        width: 100%;
             img{
             width: 100%;
             transition: opacity .2s ease-in-out;
@@ -135,6 +135,9 @@ a:hover{
 
 
         }
+    .thumbnail-link {
+        max-width: 40%;
+    }   
     .thumbnail:hover{
 
             img {

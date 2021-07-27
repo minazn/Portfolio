@@ -115,7 +115,7 @@ a:hover {
   -webkit-box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
           box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
   display: inline-block;
-  width: 50%;
+  width: 100%;
 }
 
 .mycontent .thumbnail img {
@@ -125,6 +125,10 @@ a:hover {
   display: block;
   height: 400px;
   border: solid orange;
+}
+
+.mycontent .thumbnail-link {
+  max-width: 40%;
 }
 
 .mycontent .thumbnail:hover img {
