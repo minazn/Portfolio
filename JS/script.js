@@ -17,20 +17,20 @@ class Technology {
   }
 }
 
-new Technology("C/C++", "c", "Lorem ipsum");
-new Technology("C/C++", "c++", "Si ipsum");
-new Technology("Matlab","matlab","Tada");
-new Technology("R", "r", "yes");
-new Technology("LaTex", "latex", "5");
-new Technology("Maple", "maple", "no");
-new Technology("Wordpress", "wordpress", "wp");
-new Technology("Angular", "angular", "angular");
-new Technology("HTML", "html", "html");
-new Technology("JavaScript", "js", "JS");
-new Technology("TypeScript", "ts", "TS");
-new Technology("CSS3 & SCSS", "css", "css");
-new Technology("VBA", "vba", "vba");
-new Technology("Jimdo", "jimdo", "jimdo");
+new Technology("C/C++", "c", "I started with probably one of the most popular coding languages C & C++. I mainly coded mathematical solutions such as the derivative of linear and non-linear functions, or mathematical operators for matrices. But also simple game programs like Hangman were involved.");
+new Technology("C/C++", "c++", "I started with probably one of the most popular coding languages C & C++. I mainly coded mathematical solutions such as the derivative of linear and non-linear functions, or mathematical operators for matrices. But also simple game programs like Hangman were involved.");
+new Technology("Matlab","matlab","All necessary mathematical operators are already predefined in Matlab. Here I  solved more complex math problems and created graphs. At my former employer arithmetica, statistical evaluations such as distribution fitting were my main tasks with Matlab. And it was my first time coding object oriented.");
+new Technology("R", "r", "R is probably the most widely used technology among statisticians. I used R to create statistical diagrams and evaluations both at university and for my former employee. That's how I discovered the world of librarys for the first time.");
+new Technology("LaTex", "latex", "When you want to write a long, technical document, LaTex becomes a good friend. Many symbols are predefined with simple key combinations and are easier to use than in other text editors such as Word. My bachelor thesis wasn't the only document, that I wrote with LaTex.");
+new Technology("Maple", "maple", "Compared to Matlab, Maple offers a more user friendly way to code complex mathematical solutions, as it works like a calculator for mathematicians, who want to see the result of their code right after the command.");
+new Technology("Wordpress/Jimdo", "wordpress", "Probably the most simplest way to get into Webdesign is Wordpress and Jimdo. I startet my first Wordpress project in 2020 and came to the conclusion that I want to dig deeper into this subject. Moreover, I prefer having control over what is happening in the background. That's how I jumped into Frontend.");
+new Technology("Angular", "angular", "Let me say only this: I got the idea of Angular :)");
+new Technology("HTML/CSS", "html", "I already disovered HTML and CSS in my Wordpress project. As they both are no coding languages, I got into it very quickly. In CodeFactory I additionally learned SCSS and SASS. I have to admit, that SCSS is my favorite styling technology.");
+new Technology("JavaScript/Typescript", "js", "When I first got into JavaScript, I already spoke seven different programming languages. So it was very easy for me to get started. Since it has a lot of libraries and methods, I am still a junior JavaScript developer.");
+new Technology("TypeScript/Typescript", "ts", "When I first got into JavaScript, I already spoke seven different programming languages. So it was very easy for me to get started. Since it has a lot of libraries and methods, I am still a junior JavaScript developer.");
+new Technology("HTML/CSS", "css", "I already disovered HTML and CSS in my Wordpress project. As they both are no coding languages, I got into it very quickly. In CodeFactory I additionally learned SCSS and SASS. I have to admit, that SCSS is my favorite styling technology.");
+new Technology("VBA", "vba", "How many companies do use Excel? I stopped counting. When I got into banking after my studies, I quickly learned the VBA language as I already had experience in coding. It is a very useful technology for solving Excel problems, like formatting, designing tables, etc.");
+new Technology("Wordpress/Jimdo", "jimdo", "Probably the most simplest way to get into Webdesign is Wordpress and Jimdo. I startet my first Wordpress project in 2020 and came to the conclusion that I want to dig deeper into this subject. Moreover, I prefer having control over what is happening in the background. That's how I jumped into Frontend.");
 
 
 
