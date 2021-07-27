@@ -67,44 +67,47 @@
             </h1>
         </div>
 
-        <section class="row gap-5 justify-content-center">
+        <p class="mytext text-center mb-5 call-to-action">Click on the Thumbnails, to see the projects.</p>
+
+        <section class="row gap-lg-5 gap-md-4 justify-content-center pt-5">
             <a class="thumbnail-link" href="">
-                <div class="thumbnail" data-title="Title"
-                    data-description="Bacon ipsum dolor amet filet mignon alcatra short ribs, sausage shoulder tail biltong rump chicken ground round ham hock porchetta tri-tip. Boudin bresaola andouille, leberkas pork ball tip turducken beef ribs">
+                <div class="thumbnail" data-title="Code Review 2"
+                    data-description="My second Code Review at CodeFacotry, showing a newspaper page. Technologys: HTML & SCSS.">
                     <img class="test" src="./../IMG/CR2.png" alt="Code Review 2">
                 </div>
             </a>
 
             <a class="thumbnail-link" href="">
-                <div class="thumbnail" data-title="Title"
-                    data-description="Bacon ipsum dolor amet filet mignon alcatra short ribs, sausage shoulder tail biltong rump chicken ground round ham hock porchetta tri-tip. Boudin bresaola andouille, leberkas pork ball tip turducken beef ribs">
+                <div class="thumbnail" data-title="Code Review 3"
+                    data-description="My first Web-project with JavaScript and Bootstrap for a fictitious restaurant.">
                     <img class="test" src="./../IMG/CR3.png" alt="Code Review 3">
                 </div>
             </a>
             <a class="thumbnail-link" href="">
-                <div class="thumbnail" data-title="Title"
-                    data-description="Bacon ipsum dolor amet filet mignon alcatra short ribs, sausage shoulder tail biltong rump chicken ground round ham hock porchetta tri-tip. Boudin bresaola andouille, leberkas pork ball tip turducken beef ribs">
+                <div class="thumbnail" data-title="Code Review 6"
+                    data-description="My first Angular project. In addition to a shopping cart function, it also includes animations.">
                     <img class="test" src="./../IMG/CR6.png" alt="Code Review 6">
                 </div>
             </a>
             <a class="thumbnail-link" href="">
-                <div class="thumbnail" data-title="Title"
-                    data-description="Bacon ipsum dolor amet filet mignon alcatra short ribs, sausage shoulder tail biltong rump chicken ground round ham hock porchetta tri-tip. Boudin bresaola andouille, leberkas pork ball tip turducken beef ribs">
+                <div class="thumbnail" data-title="Team 7 Frontend"
+                    data-description="As a team of 4 we developed a homepage for a fictional photographer within 3.5 days.">
                     <img class="test" src="./../IMG/Team7.png" alt="Frontend Project with Team 7">
                 </div>
             </a>
         </section>
-        <!-- 
-        <div class="thumbnail pt-5">
-            <div class="row">
-                <img src="./../IMG/CR2.png" alt="Code Review 2">
-                <img src="./../IMG/CR3.png" alt="Code Review 3">
-            </div>
-            <div class="row">
-                <img src="./../IMG/CR6.png" alt="Code Review 6">
-                <img src="./../IMG/Team7.png" alt="Frontend Project with Team">
-            </div>
-        </div> -->
+
+
+        <h1 class="mytitle">
+            <ul class="scrolltitle hidden" id="codereview">
+                <li class="whitedot"></li>
+            </ul>
+        </h1>
+
+        <p class="myparagraph">Every Friday there was an assignment in CodeFactory with specified conditions (e.g. 4
+            columns on a large screen, 2 columns on a small screen). The assignments were published at 9 a.m. The
+            submitting deadline was the following day at 6 p.m.</p>
+
 
 
         <div class="d-flex mb-5 justify-content-center">
@@ -114,34 +117,45 @@
                 </ul>
             </h1>
         </div>
+
         <div id="technology-list">
-            <div id="technology-tags">
-                <div class="mytext d-flex">
-                    <a href="#" rel="6">C</a>
-                    <a href="#" rel="6">C++</a>
-                    <a href="#" rel="6">Matlab</a>
-                    <a href="#" rel="6">Maple</a>
-                </div>
-                <div class="d-flex justify-content-end">
-                    <a href="#" rel="6">LaTex</a>
-                    <a href="#" rel="6">R</a>
-                    <a href="#" rel="6">VBA</a>
+            <div class="mytext d-flex">
+                <a id="c">C</a>
+                <a id="c++">C++</a>
+                <a id="matlab">Matlab</a>
+                <a id="r">R</a>
+            </div>
+            <div class="d-flex justify-content-end">
+                <a id="latex">LaTex</a>
+                <a id="maple">Maple</a>
+                <a id="vba">VBA</a>
+            </div>
+            <div class="d-flex">
+                <a id="wordpress">Wordpress</a>
+                <a id="jimdo">Jimdo</a>
+            </div>
+            <div class="d-flex justify-content-evenly">
+                <a id="angular">Angular</a>
+                <a id="html">HTML5</a>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="d-flex">
+                    <a id="js">JavaScript</a>
+                    <a id="ts">TypeScript</a>
                 </div>
                 <div class="d-flex">
-                    <a href="#" rel="6">Wordpress</a>
-                    <a href="#" rel="6">Jimdo</a>
+                    <a id="css">CSS3 & SCSS</a>
                 </div>
-                <div class="d-flex justify-content-evenly">
-                    <a href="#" rel="6">HTML5</a>
-                    <a href="#" rel="6">CSS3</a>
-                </div>
-                <div class="d-flex">
-                    <a href="#" rel="6">JavaScript</a>
-                    <a href="#" rel="6">TypeScript</a>
-                </div>
-                <div class="d-flex justify-content-end">
-                    <a href="#" rel="6">Angular</a>
-                </div>
+            </div>
+
+            <div class="mt-5" id="technology-card">
+                <h1 class="mytitle" id="technology-title">C/C++</h1>
+                <p class="mytext" id="technology-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac dolor rhoncus, bibendum sapien id,
+                    interdum urna. Nullam hendrerit orci neque, eget tincidunt quam venenatis quis. Nullam pulvinar ac
+                    neque id fermentum. Sed auctor turpis aliquam purus dignissim pretium. Nullam quam dui, hendrerit
+                    quis elit et, finibus facilisis felis. Sed sodales a orci at fringilla.
+                </p>
             </div>
 
         </div>
@@ -152,7 +166,7 @@
                 <li class="dot"></li>
             </ul>
         </h1>
-        <p class="mytext">
+        <p class="myparagraph">
             Hi, I'm Neslihan. I was born in Linz, Upper Austria, in 1991.
             At school, math was my favorite subject because I enjoyed finding solutions to problems. It
             was like a game to me. As soon as I found a solution, I won the game and like many people are reluctant
@@ -161,12 +175,12 @@
             I worked on the various tasks until I found a solution. When the evidence for mathematical formulas
             came into the school material, I decided to study math.
         </p>
-        <p class="mytext">
+        <p class="myparagraph">
             In 2010 I wrote my first source code in C at the Technical University of Vienna.
             Then I learned many other programming languages ​​until I found my favorites: HTML, CSS and Javascript.
             Since then I have continued my path as a frontend developer.
         </p>
-        <p class="mytext">
+        <p class="myparagraph">
             Creativity is one of the main reasons I chose frontend. I use it not only for website design, but also
             for
             my poems and stories. And when I don't hit the keys, I hit the drums.

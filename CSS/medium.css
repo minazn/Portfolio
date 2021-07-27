@@ -64,11 +64,51 @@
     margin-top: 15em !important;
   }
   .hero h1, .hero h2 {
-    font-size: 40pt !important;
+    font-size: 50pt !important;
   }
   .hero blockquote {
     width: 60% !important;
     font-size: 20pt !important;
+  }
+  .call-to-action {
+    font-size: 15pt !important;
+  }
+  .mysectiontitle {
+    font-size: 35pt !important;
+  }
+  .mysectiontitle .dot {
+    height: 15px !important;
+    width: 15px !important;
+    background-color: orange;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 34pt 10px 0 0;
+  }
+  .thumbnail {
+    position: relative;
+    overflow: hidden;
+    background: orange;
+    -webkit-box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    width: 100%;
+  }
+  .thumbnail img {
+    width: 100%;
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    display: block;
+    height: 200px !important;
+    border: solid orange;
+  }
+  .thumbnail-link {
+    max-width: 47% !important;
+  }
+  .thumbnail::before {
+    display: none !important;
+  }
+  .thumbnail::after {
+    display: none !important;
   }
 }
 /*# sourceMappingURL=medium.css.map */
