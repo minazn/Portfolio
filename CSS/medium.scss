@@ -26,7 +26,7 @@
     .myparagraph{
         width: 80% !important;
         font-size: 12pt !important;
-        padding: 0 !important
+        margin: 0 auto 0 auto !important;
     }
 
     .dot{
@@ -66,9 +66,6 @@
             display: none !important;
         }
 
-    #technology-list{ 
-        width: 80% !important;
-      }
 
       footer{
           div{

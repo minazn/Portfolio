@@ -4,7 +4,6 @@
   }
   header .hamburger-shell {
     position: fixed;
-    overflow: hidden;
     width: 40px;
     height: 40px;
     overflow: auto;

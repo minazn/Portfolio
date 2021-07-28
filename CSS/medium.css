@@ -18,7 +18,7 @@
   .myparagraph {
     width: 80% !important;
     font-size: 12pt !important;
-    padding: 0 !important;
+    margin: 0 auto 0 auto !important;
   }
   .dot {
     margin: 2vw 5px 0 0 !important;
@@ -45,9 +45,6 @@
   }
   .thumbnail::after {
     display: none !important;
-  }
-  #technology-list {
-    width: 80% !important;
   }
   footer div {
     padding-top: 10px;

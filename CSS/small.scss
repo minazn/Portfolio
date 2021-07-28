@@ -2,4 +2,110 @@
 
 @media only screen and (max-width: 764px){
 
+    header{
+        .hamburger-shell {  
+        width: 35px;
+        height: 35px;
+        }
+
+        .top{
+        width: 20px;
+        height: 3px;
+        }
+
+        .middle{
+        @extend .top;
+        top: 38px;
+        }
+
+        .bottom{
+        display: none;
+        }
+
+        #hamburger {
+        font-size: 12pt;
+
+            .hide-hamb{
+                margin-top: -1150%;
+            }
+        }      
+    }
+
+    .hero{
+        h1,h2{
+            font-size: 8vw !important;
+        }
+
+        blockquote{
+            font-size: 4vw !important;
+            width: 70% !important;
+            margin-left: 22% !important;
+        }
+    }
+
+    .mycontent{
+        width: 100% !important;
+    }
+
+    .mysectiontitle{
+        font-size: 16pt !important;
+        padding-top: 30%;
+    
+    }
+
+    .dot{
+        margin: 2vh 5px 0 0 !important;
+        height: 2vw !important;
+        width: 2vw !important;
+    }
+
+    .call-to-action{
+        font-size: 11pt !important;
+        margin-bottom: 0  !important;
+    }
+
+    .thumbnail{
+        img{
+        height: 200px !important;
+        } 
+
+    }
+    .thumbnail-link {
+        max-width: 90% !important;
+    } 
+
+    .thumbnail::before {
+        display: none !important;
+    }
+
+    .thumbnail::after {
+        display: none !important;
+    }
+
+    .myparagraph{
+        width: 95% !important;
+        margin: 0 auto 0 auto !important;
+        font-size: 12pt !important;
+    }
+
+    #codereview{
+        margin-left: 0 !important;
+        font-size: 13pt;
+    }
+
+    .whitedot{
+        height: 1vw !important;
+        width: 1vw !important;
+        margin: 2vh 3px 0 0 !important;
+    }
+
+    #technology-list{
+        width: 90% !important;
+    
+        a{
+            font-size: 13pt !important;    
+        }
+    
+    }
+
 }
