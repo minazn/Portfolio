@@ -263,4 +263,12 @@ footer {
 footer i {
   margin-right: 10px;
 }
+
+footer a {
+  color: #232323 !important;
+}
+
+footer a:hover {
+  color: white !important;
+}
 /*# sourceMappingURL=style.css.map */

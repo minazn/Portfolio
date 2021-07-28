@@ -272,6 +272,14 @@ footer{
     i{
         margin-right: 10px;
     }
+
+    a{
+        color: $bg-color !important;
+    }
+
+    a:hover{
+        color: $font-color !important;
+    }
 }
  
 
