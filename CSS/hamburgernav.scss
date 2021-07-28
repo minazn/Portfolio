@@ -1,0 +1,75 @@
+@media only screen and (max-width: 1199px){
+
+        #large-nav{
+        display: none !important;
+    }
+
+  header{
+        .hamburger-shell {
+        position: fixed;
+        overflow: hidden;    
+        width: 40px;
+        height: 40px;
+        overflow: auto;
+        left: 5vw;
+        top: 2vh;
+        cursor: pointer;
+        background: transparent;
+        border: solid;
+        color: orange;
+        // padding: 1%;
+        }
+
+        .top{
+        position: fixed;
+        width: 25px;
+        height: 5px;
+        background-color: orange;
+        transition: all 350ms ease-in-out;
+        top: 28px;
+        }
+
+        .middle{
+        @extend .top;
+        top: 38px;
+        }
+
+        .bottom{
+        @extend .top;
+        top: 48px;
+        }
+
+        #hamburger {
+        position: fixed;
+        left: 4vw;
+        top: 12vh;
+        color: white;       
+        width: 10vw;
+        font-size: 20pt;
+
+            .hide-hamb{
+                margin-top: -550%;
+            }
+        
+        }      
+
+        .menu-open > .hide-hamb{
+            margin-top: 10% !important;
+        }
+
+        .menu-open .top {
+        transform: rotate(225deg);
+        -webkit-transform: rotate(225deg);
+        background-color: white;
+        top: 4%;
+        height: 2px;
+        }
+    
+        .menu-open .middle {
+        transform: rotate(-225deg);
+        -webkit-transform: rotate(-225deg);
+        background-color: white;
+        height: 2px;
+        }
+    }
+}    

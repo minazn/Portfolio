@@ -1,63 +1,38 @@
+@import url("./hamburgernav.css");
 @media only screen and (min-width: 765px) and (max-width: 1199px) {
   #large-nav {
     display: none !important;
   }
-  header .hamburger-shell {
-    position: fixed;
-    overflow: hidden;
-    width: 10%;
-    height: 5vh;
-    overflow: auto;
-    right: 5vw;
-    top: 2vh;
-    cursor: pointer;
-    background: transparent;
-    border: solid;
-    color: orange;
-    padding: 1%;
+  .hero h1, .hero h2 {
+    font-size: 5vw !important;
   }
-  header .top, header .middle, header .bottom {
-    position: fixed;
-    width: 7%;
-    height: 5px;
-    background-color: orange;
-    -webkit-transition: all 350ms ease-in-out;
-    transition: all 350ms ease-in-out;
-    top: 3%;
+  .hero blockquote {
+    font-size: 2vw !important;
   }
-  header .middle {
-    top: 4%;
+  .mycontent {
+    width: 80% !important;
   }
-  header .bottom {
-    top: 5%;
+  .call-to-action {
+    font-size: 14pt !important;
   }
-  header #hamburger {
-    position: fixed;
-    left: calc(100% - 252px);
-    top: 10px;
-    color: white;
-    width: 200px;
-    font-size: 20pt;
-    text-align: right;
+  .myparagraph {
+    width: 80% !important;
+    font-size: 12pt !important;
+    padding: 0 !important;
   }
-  header #hamburger .hide-hamb {
-    margin-top: -190%;
+  .dot {
+    margin: 2vw 5px 0 0 !important;
   }
-  header .menu-open > .hide-hamb {
-    margin-top: 60% !important;
+  .whitedot {
+    height: 1vw !important;
+    width: 1vw !important;
+    margin: 2vh 3px 0 0 !important;
   }
-  header .menu-open .top, header .menu-open .middle, header .menu-open .bottom {
-    transform: rotate(225deg);
-    -webkit-transform: rotate(225deg);
-    background-color: white;
-    top: 4%;
-    height: 2px;
+  #technology-description {
+    font-size: 12pt !important;
   }
-  header .menu-open .middle {
-    transform: rotate(-225deg);
-    -webkit-transform: rotate(-225deg);
-    background-color: white;
-    height: 2px;
+  #codereview {
+    margin: 6rem 3rem 6rem 3rem !important;
   }
   .thumbnail img {
     height: 200px !important;
@@ -70,6 +45,12 @@
   }
   .thumbnail::after {
     display: none !important;
+  }
+  #technology-list {
+    width: 80% !important;
+  }
+  footer div {
+    padding-top: 10px;
   }
 }
 /*# sourceMappingURL=medium.css.map */

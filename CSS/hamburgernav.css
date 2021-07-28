@@ -1,0 +1,61 @@
+@media only screen and (max-width: 1199px) {
+  #large-nav {
+    display: none !important;
+  }
+  header .hamburger-shell {
+    position: fixed;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    overflow: auto;
+    left: 5vw;
+    top: 2vh;
+    cursor: pointer;
+    background: transparent;
+    border: solid;
+    color: orange;
+  }
+  header .top, header .middle, header .bottom {
+    position: fixed;
+    width: 25px;
+    height: 5px;
+    background-color: orange;
+    -webkit-transition: all 350ms ease-in-out;
+    transition: all 350ms ease-in-out;
+    top: 28px;
+  }
+  header .middle {
+    top: 38px;
+  }
+  header .bottom {
+    top: 48px;
+  }
+  header #hamburger {
+    position: fixed;
+    left: 4vw;
+    top: 12vh;
+    color: white;
+    width: 10vw;
+    font-size: 20pt;
+  }
+  header #hamburger .hide-hamb {
+    margin-top: -550%;
+  }
+  header .menu-open > .hide-hamb {
+    margin-top: 10% !important;
+  }
+  header .menu-open .top, header .menu-open .middle, header .menu-open .bottom {
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+    background-color: white;
+    top: 4%;
+    height: 2px;
+  }
+  header .menu-open .middle {
+    transform: rotate(-225deg);
+    -webkit-transform: rotate(-225deg);
+    background-color: white;
+    height: 2px;
+  }
+}
+/*# sourceMappingURL=hamburgernav.css.map */

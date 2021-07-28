@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;800&family=Prompt:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
 @import url("./large.css");
 @import url("/CSS/medium.css");
+@import url("./small.css");
+@import url("./medium-large.css");
 
 $bg-color: #232323;
 $title-font: "Prompt", sans-serif;
@@ -21,7 +24,7 @@ body{
 
 .mysectiontitle{
     @extend .mytitle;
-    font-size: 4vw;
+    font-size: 3vw;
     text-align: center;
     letter-spacing: 3px;
     padding-top: 30%;
@@ -34,25 +37,26 @@ body{
     background-color: $secondary-color;
     border-radius: 50%;
     display: inline-block;
-    margin: 3vw 10px 0 0;
+    margin: 2vw 10px 0 0;
 }
 
 .whitedot{
     @extend .dot;
-    height: 1rem;
-    width: 1rem;
+    height: 1vh;
+    width: 1vh;
     background-color: $font-color;
-    margin: 2rem 10px 0 0;
+    margin: 3vh 5px 0 0;
 }
 
 .mytext{
     font-family: $text-font !important;
     color: $font-color !important;
+    font-size: 1rem;
 }
 
 .myparagraph{
     @extend .mytext;
-    font-size: 2vh;
+    font-size: 1rem;
     padding: 2rem;
     margin-left: 74pt;
     width: 60%;
@@ -70,7 +74,8 @@ body{
 }
 
 a{
-   @extend .mytext;
+   font-family: $text-font !important;
+   color: $font-color !important;
    text-decoration: none !important;
 }
 
@@ -80,7 +85,8 @@ a:hover{
 
 
 #large-nav{
-    font-size: 3vw !important;
+    color: $font-color !important;
+    font-size: 2vw !important;
     padding-top: 20vh;
     margin-left: 5%;
     position: fixed;
@@ -143,6 +149,11 @@ a:hover{
         max-width: 0;
       }
 
+    #thumbnail-section{
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+    }  
 
     .thumbnail{
         position: relative;
@@ -155,7 +166,7 @@ a:hover{
             width: 100%;
             transition: opacity .2s ease-in-out;
             display: block;
-            height: 400px;
+            height: 40vh;
             border: solid $secondary-color;
             }
 
@@ -186,7 +197,7 @@ a:hover{
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         color: $bg-color;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-family: $text-font;
         font-weight: 400;
     }
@@ -202,7 +213,7 @@ a:hover{
         top: 0;
         transform: translateY(-100%) scale(.8);
         background: rgba(255,255,255,.4);
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         font-weight: 300;
         font-family: $title-font;
         text-align: center;
@@ -221,7 +232,7 @@ a:hover{
 }
 
 #technology-list{
-    width: 40%;
+    width: 60%;
     margin: 10% auto 0 auto;
 
     a{
@@ -233,24 +244,24 @@ a:hover{
 
     }
 
-    p{
-        font-size: 2vh;
+    #technology-description{
+        font-size: 1rem;
         font-weight: 200;
     }
 }
 
 #about{
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 footer{
     background-color: $secondary-color;
-    margin-top: 600px;
+    margin-top: 26vh !important;
     margin-bottom: 40px;
-    font-size: 15pt;
+    font-size: 8pt;
     font-family: $text-font;
     font-weight: 800;
-    padding: 2vh 6vw 2vh 6vw;
+    padding: 2vh 0 2vh 0 !important;
     color: $bg-color;
     i{
         margin-right: 10px;
