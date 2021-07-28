@@ -3,13 +3,16 @@
   #large-nav {
     display: none !important;
   }
-  .hero h1, .hero h2 {
+  #hero h1, #hero h2 {
     font-size: 5vw !important;
   }
-  .hero blockquote {
+  #hero blockquote {
     font-size: 2vw !important;
   }
-  .mycontent {
+  .indent {
+    text-indent: 0 !important;
+  }
+  main {
     width: 80% !important;
   }
   .call-to-action {
@@ -32,7 +35,7 @@
     font-size: 12pt !important;
   }
   #codereview {
-    margin: 6rem 3rem 6rem 3rem !important;
+    margin: 6rem 3rem 6rem 0 !important;
   }
   .thumbnail img {
     height: 200px !important;

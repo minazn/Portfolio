@@ -17,9 +17,13 @@ body{
     background-color: $bg-color !important;
 }
 
-.mytitle{
-    font-family: $title-font;
+.text-font-color{
     color: $font-color;
+}
+
+.mytitle{
+    @extend .text-font-color;
+    font-family: $title-font;
 }
 
 .mysectiontitle{
@@ -49,16 +53,15 @@ body{
 }
 
 .mytext{
+    @extend .text-font-color;
     font-family: $text-font !important;
-    color: $font-color !important;
-    font-size: 1rem;
 }
+
 
 .myparagraph{
     @extend .mytext;
     font-size: 1rem;
     padding: 2rem;
-    margin-left: 74pt;
     width: 60%;
     font-weight: 200;
 }
@@ -94,10 +97,14 @@ a:hover{
 }
 
 #codereview{
-    margin: 6rem;
+    margin: 6rem 6rem 6rem 0;
 }
 
-.hero{
+.leftmargin{
+    margin-left: 20%;
+}
+
+#hero{
     padding-top: 15vh;
     margin-bottom: 0;
     h1,h2{
@@ -113,6 +120,7 @@ a:hover{
     }
 
     blockquote{
+        @extend .mytext;
         width: 50%;
         display: inline-flex;
         margin-left: 42%;
@@ -124,7 +132,7 @@ a:hover{
     }
 }
 
-.mycontent{
+main{
     min-height: 100vh;
     width: 70%;
     margin-left: auto;
@@ -153,7 +161,7 @@ a:hover{
         width: 99%;
         margin-left: auto;
         margin-right: auto;
-    }  
+      
 
     .thumbnail{
         position: relative;
@@ -228,7 +236,7 @@ a:hover{
     .thumbnail:hover::after{
         transform: translateY(0%) scale(1);
     }
-
+    }
 }
 
 #technology-list{
@@ -250,9 +258,7 @@ a:hover{
     }
 }
 
-#about{
-    margin-left: 10%;
-}
+
 
 footer{
     background-color: $secondary-color;

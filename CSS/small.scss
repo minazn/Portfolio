@@ -31,7 +31,7 @@
         }      
     }
 
-    .hero{
+    #hero{
         h1,h2{
             font-size: 8vw !important;
         }
@@ -42,8 +42,12 @@
             margin-left: 22% !important;
         }
     }
+    .indent{
+        text-indent: 0 !important;
+       
+   }
 
-    .mycontent{
+    main{
         width: 100% !important;
     }
 

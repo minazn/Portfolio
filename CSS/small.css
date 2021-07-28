@@ -20,15 +20,18 @@
   header #hamburger .hide-hamb {
     margin-top: -1150%;
   }
-  .hero h1, .hero h2 {
+  #hero h1, #hero h2 {
     font-size: 8vw !important;
   }
-  .hero blockquote {
+  #hero blockquote {
     font-size: 4vw !important;
     width: 70% !important;
     margin-left: 22% !important;
   }
-  .mycontent {
+  .indent {
+    text-indent: 0 !important;
+  }
+  main {
     width: 100% !important;
   }
   .mysectiontitle {

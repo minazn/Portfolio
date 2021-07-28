@@ -10,9 +10,12 @@ body {
   background-color: #232323 !important;
 }
 
+.text-font-color, .mytitle, .mysectiontitle, .mytext, .myparagraph, #hero blockquote {
+  color: white;
+}
+
 .mytitle, .mysectiontitle {
   font-family: "Prompt", sans-serif;
-  color: white;
 }
 
 .mysectiontitle {
@@ -38,16 +41,13 @@ body {
   margin: 3vh 5px 0 0;
 }
 
-.mytext, .myparagraph {
+.mytext, .myparagraph, #hero blockquote {
   font-family: "Mulish", sans-serif !important;
-  color: white !important;
-  font-size: 1rem;
 }
 
 .myparagraph {
   font-size: 1rem;
   padding: 2rem;
-  margin-left: 74pt;
   width: 60%;
   font-weight: 200;
 }
@@ -80,27 +80,31 @@ a:hover {
 }
 
 #codereview {
-  margin: 6rem;
+  margin: 6rem 6rem 6rem 0;
 }
 
-.hero {
+.leftmargin {
+  margin-left: 20%;
+}
+
+#hero {
   padding-top: 15vh;
   margin-bottom: 0;
 }
 
-.hero h1, .hero h2 {
+#hero h1, #hero h2 {
   font-size: 5vw;
 }
 
-.hero span {
+#hero span {
   color: orange;
 }
 
-.hero #logo {
+#hero #logo {
   width: 60%;
 }
 
-.hero blockquote {
+#hero blockquote {
   width: 50%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -113,20 +117,20 @@ a:hover {
   font-weight: 200;
 }
 
-.mycontent {
+main {
   min-height: 100vh;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.mycontent .scrolltitle {
+main .scrolltitle {
   list-style: none;
   border-bottom: 0;
   border-top: 0;
 }
 
-.mycontent .scrolltitle li {
+main .scrolltitle li {
   float: left;
   opacity: 1;
   -webkit-transition: all 0.5s ease-in-out;
@@ -134,18 +138,18 @@ a:hover {
   max-width: 2em;
 }
 
-.mycontent .scrolltitle.hidden li.ghost {
+main .scrolltitle.hidden li.ghost {
   opacity: 0;
   max-width: 0;
 }
 
-.mycontent #thumbnail-section {
+main #thumbnail-section {
   width: 99%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.mycontent .thumbnail {
+main #thumbnail-section .thumbnail {
   position: relative;
   overflow: hidden;
   background: orange;
@@ -155,7 +159,7 @@ a:hover {
   width: 100%;
 }
 
-.mycontent .thumbnail img {
+main #thumbnail-section .thumbnail img {
   width: 100%;
   -webkit-transition: opacity .2s ease-in-out;
   transition: opacity .2s ease-in-out;
@@ -164,15 +168,15 @@ a:hover {
   border: solid orange;
 }
 
-.mycontent .thumbnail-link {
+main #thumbnail-section .thumbnail-link {
   max-width: 40%;
 }
 
-.mycontent .thumbnail:hover img {
+main #thumbnail-section .thumbnail:hover img {
   opacity: .3;
 }
 
-.mycontent .thumbnail::before {
+main #thumbnail-section .thumbnail::before {
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -195,7 +199,7 @@ a:hover {
   font-weight: 400;
 }
 
-.mycontent .thumbnail::after {
+main #thumbnail-section .thumbnail::after {
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -217,12 +221,12 @@ a:hover {
   padding-top: 55px;
 }
 
-.mycontent .thumbnail:hover::before {
+main #thumbnail-section .thumbnail:hover::before {
   -webkit-transform: translateY(0%) scale(1);
           transform: translateY(0%) scale(1);
 }
 
-.mycontent .thumbnail:hover::after {
+main #thumbnail-section .thumbnail:hover::after {
   -webkit-transform: translateY(0%) scale(1);
           transform: translateY(0%) scale(1);
 }
@@ -243,10 +247,6 @@ a:hover {
 #technology-list #technology-description {
   font-size: 1rem;
   font-weight: 200;
-}
-
-#about {
-  margin-left: 10%;
 }
 
 footer {
