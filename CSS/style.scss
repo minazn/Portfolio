@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Prompt:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;800&family=Prompt:wght@500&display=swap');
 @import url("./large.css");
-@import url("/CSS/medium.css    ");
+@import url("/CSS/medium.css");
 
 $bg-color: #232323;
-$title-font: "Promt", sans-serif;
-
-// *, *:after, *:before {
-// 	box-sizing: border-box;
-// }
+$title-font: "Prompt", sans-serif;
+$text-font: 'Mulish', sans-serif;
+$font-color: white;
+$secondary-color: orange;
 
 body{
     margin: 0;
@@ -16,52 +15,58 @@ body{
 }
 
 .mytitle{
-    font-family: 'Prompt', sans-serif;
-    color: white;
+    font-family: $title-font;
+    color: $font-color;
 }
 
 .mysectiontitle{
     @extend .mytitle;
-    font-size: 50pt;
+    font-size: 4vw;
     text-align: center;
     letter-spacing: 3px;
     padding-top: 30%;
 
-
 }
 
 .dot{
-    height: 25px;
-    width: 25px;
-    background-color: orange;
+    height: 1vw;
+    width: 1vw;
+    background-color: $secondary-color;
     border-radius: 50%;
     display: inline-block;
-    margin: 34pt 10px 0 0;
+    margin: 3vw 10px 0 0;
 }
 
 .whitedot{
     @extend .dot;
-    height: 15px;
-    width: 15px;
-    background-color: white;
-    margin: 24pt 10px 0 0;
+    height: 1rem;
+    width: 1rem;
+    background-color: $font-color;
+    margin: 2rem 10px 0 0;
 }
 
 .mytext{
-    font-family: 'Mulish', sans-serif !important;
-    color: white !important;
+    font-family: $text-font !important;
+    color: $font-color !important;
 }
 
 .myparagraph{
     @extend .mytext;
-    font-size: 18pt;
+    font-size: 2vh;
     padding: 2rem;
-    // border: solid white;
     margin-left: 74pt;
+    width: 60%;
+    font-weight: 200;
+}
+
+.indent{
+     text-indent: 3rem;
+    
 }
 
 .call-to-action{
-    font-size: 20pt;
+    font-size: 1.5vw;
+    font-weight: 200;
 }
 
 a{
@@ -70,11 +75,12 @@ a{
 }
 
 a:hover{
-    color: orange !important;
+    color: $secondary-color !important;
 }
 
+
 #large-nav{
-    font-size: 40pt !important;
+    font-size: 3vw !important;
     padding-top: 20vh;
     margin-left: 5%;
     position: fixed;
@@ -86,14 +92,14 @@ a:hover{
 }
 
 .hero{
-    padding: 7em 0 0 0;
+    padding-top: 15vh;
     margin-bottom: 0;
     h1,h2{
-        font-size: 70pt;
+        font-size: 5vw;
     }
 
     span{
-        color: orange;
+        color: $secondary-color;
     }
 
     #logo{
@@ -103,11 +109,12 @@ a:hover{
     blockquote{
         width: 50%;
         display: inline-flex;
-        margin-left: 34%;
-        font-size: 30pt;
+        margin-left: 42%;
+        font-size: 2vw;
         font-style: italic;
         border-left: solid;
-        border-color: orange;
+        border-color: $secondary-color;
+        font-weight: 200;
     }
 }
 
@@ -121,10 +128,6 @@ a:hover{
         list-style: none;
         border-bottom: 0;
         border-top:0;
-      
-      .hidden {
-        border-bottom: 1px solid $bg-color;
-      }
     
       li{
         float: left;
@@ -142,12 +145,9 @@ a:hover{
 
 
     .thumbnail{
-        // backface-visibility: hidden;
-        // -webkit-backface-visibility: hidden;
         position: relative;
-        // margin: 0 auto;
         overflow: hidden;
-        background: orange;
+        background: $secondary-color;
         box-shadow: 0 15px 50px rgba(0,0,0,.5);
         display: inline-block;
         width: 100%;
@@ -156,7 +156,7 @@ a:hover{
             transition: opacity .2s ease-in-out;
             display: block;
             height: 400px;
-            border: solid orange;
+            border: solid $secondary-color;
             }
 
 
@@ -187,8 +187,8 @@ a:hover{
         backdrop-filter: blur(10px);
         color: $bg-color;
         font-size: 1.5rem;
-        font-family: 'Mulish', sans-serif;
-        font-weight: bold;
+        font-family: $text-font;
+        font-weight: 400;
     }
 
     .thumbnail::after{
@@ -226,20 +226,35 @@ a:hover{
 
     a{
         font-size: 20pt;
-        font-weight: bold;
-        border: solid;
+        border: solid 1px;
         padding: 1rem;
         cursor: pointer;
+        font-weight: 200;
 
     }
 
     p{
-        font-size: 15pt;
+        font-size: 2vh;
+        font-weight: 200;
     }
 }
 
+#about{
+    margin-left: 5%;
+}
+
 footer{
+    background-color: $secondary-color;
     margin-top: 600px;
+    margin-bottom: 40px;
+    font-size: 15pt;
+    font-family: $text-font;
+    font-weight: 800;
+    padding: 2vh 6vw 2vh 6vw;
+    color: $bg-color;
+    i{
+        margin-right: 10px;
+    }
 }
  
 

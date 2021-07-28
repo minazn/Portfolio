@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Prompt:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;800&family=Prompt:wght@500&display=swap");
 @import url("./large.css");
-@import url("/CSS/medium.css    ");
+@import url("/CSS/medium.css");
 body {
   margin: 0;
   padding: 0;
@@ -8,46 +8,53 @@ body {
 }
 
 .mytitle, .mysectiontitle {
-  font-family: 'Prompt', sans-serif;
+  font-family: "Prompt", sans-serif;
   color: white;
 }
 
 .mysectiontitle {
-  font-size: 50pt;
+  font-size: 4vw;
   text-align: center;
   letter-spacing: 3px;
   padding-top: 30%;
 }
 
 .dot, .whitedot {
-  height: 25px;
-  width: 25px;
+  height: 1vw;
+  width: 1vw;
   background-color: orange;
   border-radius: 50%;
   display: inline-block;
-  margin: 34pt 10px 0 0;
+  margin: 3vw 10px 0 0;
 }
 
 .whitedot {
-  height: 15px;
-  width: 15px;
+  height: 1rem;
+  width: 1rem;
   background-color: white;
-  margin: 24pt 10px 0 0;
+  margin: 2rem 10px 0 0;
 }
 
 .mytext, .myparagraph, a {
-  font-family: 'Mulish', sans-serif !important;
+  font-family: "Mulish", sans-serif !important;
   color: white !important;
 }
 
 .myparagraph {
-  font-size: 18pt;
+  font-size: 2vh;
   padding: 2rem;
   margin-left: 74pt;
+  width: 60%;
+  font-weight: 200;
+}
+
+.indent {
+  text-indent: 3rem;
 }
 
 .call-to-action {
-  font-size: 20pt;
+  font-size: 1.5vw;
+  font-weight: 200;
 }
 
 a {
@@ -59,7 +66,7 @@ a:hover {
 }
 
 #large-nav {
-  font-size: 40pt !important;
+  font-size: 3vw !important;
   padding-top: 20vh;
   margin-left: 5%;
   position: fixed;
@@ -70,12 +77,12 @@ a:hover {
 }
 
 .hero {
-  padding: 7em 0 0 0;
+  padding-top: 15vh;
   margin-bottom: 0;
 }
 
 .hero h1, .hero h2 {
-  font-size: 70pt;
+  font-size: 5vw;
 }
 
 .hero span {
@@ -91,11 +98,12 @@ a:hover {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-left: 34%;
-  font-size: 30pt;
+  margin-left: 42%;
+  font-size: 2vw;
   font-style: italic;
   border-left: solid;
   border-color: orange;
+  font-weight: 200;
 }
 
 .mycontent {
@@ -109,10 +117,6 @@ a:hover {
   list-style: none;
   border-bottom: 0;
   border-top: 0;
-}
-
-.mycontent .scrolltitle .hidden {
-  border-bottom: 1px solid #232323;
 }
 
 .mycontent .scrolltitle li {
@@ -174,8 +178,8 @@ a:hover {
   backdrop-filter: blur(10px);
   color: #232323;
   font-size: 1.5rem;
-  font-family: 'Mulish', sans-serif;
-  font-weight: bold;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
 }
 
 .mycontent .thumbnail::after {
@@ -195,7 +199,7 @@ a:hover {
   background: rgba(255, 255, 255, 0.4);
   font-size: 3.5rem;
   font-weight: 300;
-  font-family: "Promt", sans-serif;
+  font-family: "Prompt", sans-serif;
   text-align: center;
   padding-top: 55px;
 }
@@ -217,17 +221,33 @@ a:hover {
 
 #technology-list a {
   font-size: 20pt;
-  font-weight: bold;
-  border: solid;
+  border: solid 1px;
   padding: 1rem;
   cursor: pointer;
+  font-weight: 200;
 }
 
 #technology-list p {
-  font-size: 15pt;
+  font-size: 2vh;
+  font-weight: 200;
+}
+
+#about {
+  margin-left: 5%;
 }
 
 footer {
+  background-color: orange;
   margin-top: 600px;
+  margin-bottom: 40px;
+  font-size: 15pt;
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  padding: 2vh 6vw 2vh 6vw;
+  color: #232323;
+}
+
+footer i {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */
