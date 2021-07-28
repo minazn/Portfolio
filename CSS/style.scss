@@ -86,6 +86,10 @@ a:hover{
     color: $secondary-color !important;
 }
 
+a:active{
+    color: $secondary-color !important;
+}
+
 
 #large-nav{
     color: $font-color !important;
@@ -93,6 +97,10 @@ a:hover{
     padding-top: 20vh;
     margin-left: 5%;
     position: fixed;
+
+    .focus{
+        color: $secondary-color !important;
+    }
 
 }
 
@@ -199,13 +207,13 @@ main{
         transition: transform .4s ease-out;
         content: attr(data-description) "";
         top: 50%;
-        padding: 3rem;
+        padding: 2rem;
         transform: translateY(100%) scale(.8);
         background: rgba(255,165,0,.6);
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         color: $bg-color;
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-family: $text-font;
         font-weight: 400;
     }
@@ -221,7 +229,7 @@ main{
         top: 0;
         transform: translateY(-100%) scale(.8);
         background: rgba(255,255,255,.4);
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 300;
         font-family: $title-font;
         text-align: center;

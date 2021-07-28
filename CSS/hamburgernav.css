@@ -39,6 +39,8 @@
   }
   header #hamburger .hide-hamb {
     margin-top: -550%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   header .menu-open > .hide-hamb {
     margin-top: 10% !important;
@@ -55,6 +57,9 @@
     -webkit-transform: rotate(-225deg);
     background-color: white;
     height: 2px;
+  }
+  header .focus {
+    color: orange;
   }
 }
 /*# sourceMappingURL=hamburgernav.css.map */

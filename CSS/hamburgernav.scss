@@ -48,6 +48,7 @@
 
             .hide-hamb{
                 margin-top: -550%;
+                transition: 0.5s;
             }
         
         }      
@@ -69,6 +70,10 @@
         -webkit-transform: rotate(-225deg);
         background-color: white;
         height: 2px;
+        }
+
+        .focus{
+            color: orange;
         }
     }
 }    

@@ -1,5 +1,6 @@
 const titles = ["Portfolio","What are Codereviews?","Technologys","About me"];
 const titles_id = ["#portfolio","#codereview","#technologys", "#about"];
+const nav_class = [".focus-hero",".focus-portfolio", ".focus-technology", ".focus-about"]
 
 var technology_list = [];
 
@@ -72,7 +73,31 @@ $(function() {
           $(val).addClass("hidden");
         }
       }
+      var scroll = $(window).scrollTop() +750;
+
+
+      $(nav_class[0]).addClass("focus");
+      for (let i=1; i<nav_class.length;i++){
+        let pos = 0;
+        if (titles_id[i] == "#codereview"){
+          pos = $(titles_id[i-1]).position().top;
+        }else{
+          pos = $(titles_id[i]).position().top;
+        }
+
+        if (scroll <= pos){
+          $(nav_class[i]).removeClass("focus");
+        }else{    
+          $(nav_class[i]).addClass("focus");
+          $(nav_class[i-1]).removeClass("focus");
+        }
+      }
     });
+
+    console.log($(titles_id[0]).position().top);
+    console.log($(titles_id[1]).position().top);
+    console.log($(titles_id[2]).position().top);
+    console.log($(titles_id[3]).position().top);
 
   });
 
