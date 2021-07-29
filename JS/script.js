@@ -32,6 +32,7 @@ new Technology("JavaScript/Typescript", "ts", "When I first got into JavaScript,
 new Technology("HTML/CSS", "css", "I already disovered HTML and CSS in my Wordpress project. As they both are no coding languages, I got into it very quickly. In CodeFactory I additionally learned SCSS and SASS. I have to admit, that SCSS is my favorite styling technology.");
 new Technology("VBA", "vba", "How many companies do use Excel? I stopped counting. When I got into banking after my studies, I quickly learned the VBA language as I already had experience in coding. It is a very useful technology for solving Excel problems, like formatting, designing tables, etc.");
 new Technology("Wordpress/Jimdo", "jimdo", "Probably the most simplest way to get into Webdesign is Wordpress and Jimdo. I startet my first Wordpress project in 2020 and came to the conclusion that I want to dig deeper into this subject. Moreover, I prefer having control over what is happening in the background. That's how I jumped into Frontend.");
+new Technology("SQL","sql","When it comes to databases, there's probably no getting around SQL. I used SQL when I was working in a bank. For the data comparison I have selected the necessary ones from a database, using classical commands like <i>join</i> or <i>distinct</i>.")
 
 
 
@@ -93,11 +94,6 @@ $(function() {
         }
       }
     });
-
-    console.log($(titles_id[0]).position().top);
-    console.log($(titles_id[1]).position().top);
-    console.log($(titles_id[2]).position().top);
-    console.log($(titles_id[3]).position().top);
 
   });
 

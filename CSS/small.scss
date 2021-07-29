@@ -4,13 +4,13 @@
 
     header{
         .hamburger-shell {  
-        width: 35px;
-        height: 35px;
+        width: 35px !important;
+        height: 35px !important;
         }
 
         .top{
-        width: 20px;
-        height: 3px;
+        width: 20px !important;
+        height: 3px !important;
         }
 
         .middle{
@@ -23,12 +23,17 @@
         }
 
         #hamburger {
-        font-size: 12pt;
+        font-size: 12pt !important;
 
             .hide-hamb{
-                margin-top: -1150%;
+                margin-top: 10% !important;
+                margin-left: -150%;
             }
-        }      
+        }
+        
+        .menu-open > .hide-hamb{
+            margin-left: 0% !important;
+        }
     }
 
     #hero{
@@ -110,6 +115,10 @@
             font-size: 13pt !important;    
         }
     
+    }
+
+    .leftmargin{
+        margin-left: 0 !important;
     }
 
 }
