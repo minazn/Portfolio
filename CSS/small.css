@@ -52,7 +52,7 @@
     margin-bottom: 0  !important;
   }
   .thumbnail img {
-    height: 200px !important;
+    min-height: 200px !important;
   }
   .thumbnail-link {
     max-width: 90% !important;

@@ -37,8 +37,11 @@
   #codereview {
     margin: 6rem 3rem 6rem 0 !important;
   }
+  .leftmargin {
+    margin-left: 0 !important;
+  }
   .thumbnail img {
-    height: 200px !important;
+    min-height: 200px !important;
   }
   .thumbnail-link {
     max-width: 47% !important;

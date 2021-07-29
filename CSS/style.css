@@ -172,7 +172,7 @@ main #thumbnail-section .thumbnail img {
   -webkit-transition: opacity .2s ease-in-out;
   transition: opacity .2s ease-in-out;
   display: block;
-  height: 30vh;
+  max-height: 20vh;
   border: solid orange;
 }
 
