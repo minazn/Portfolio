@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;800&family=Prompt:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;900&display=swap");
 @import url("./large.css");
 @import url("/CSS/medium.css");
 @import url("./small.css");
@@ -23,6 +24,7 @@ body {
   text-align: center;
   letter-spacing: 3px;
   padding-top: 30%;
+  font-weight: 400;
 }
 
 .dot, .whitedot {
@@ -31,7 +33,7 @@ body {
   background-color: orange;
   border-radius: 50%;
   display: inline-block;
-  margin: 2vw 10px 0 0;
+  margin: 2vw 5px 0 0;
 }
 
 .whitedot {
@@ -102,6 +104,7 @@ a:active {
 
 #hero h1, #hero h2 {
   font-size: 5vw;
+  font-weight: 500;
 }
 
 #hero span {
@@ -172,7 +175,7 @@ main #thumbnail-section .thumbnail img {
   -webkit-transition: opacity .2s ease-in-out;
   transition: opacity .2s ease-in-out;
   display: block;
-  max-height: 20vh;
+  height: 20vw;
   border: solid orange;
 }
 
@@ -261,9 +264,9 @@ footer {
   background-color: orange;
   margin-top: 26vh !important;
   margin-bottom: 40px;
-  font-size: 8pt;
-  font-family: "Mulish", sans-serif;
-  font-weight: 800;
+  font-size: 9pt;
+  font-family: "Prompt", sans-serif;
+  font-weight: 300;
   padding: 2vh 0 2vh 0 !important;
   color: #232323;
 }

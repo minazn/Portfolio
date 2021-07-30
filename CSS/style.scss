@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;800&family=Prompt:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;900&display=swap');
 @import url("./large.css");
 @import url("/CSS/medium.css");
 @import url("./small.css");
 @import url("./medium-large.css");
 
+
 $bg-color: #232323;
-$title-font: "Prompt", sans-serif;
+$title-font: "Prompt", sans-serif; 
 $text-font: 'Mulish', sans-serif;
 $font-color: white;
 $secondary-color: orange;
@@ -32,6 +34,7 @@ body{
     text-align: center;
     letter-spacing: 3px;
     padding-top: 30%;
+    font-weight: 400;
 
 }
 
@@ -41,7 +44,7 @@ body{
     background-color: $secondary-color;
     border-radius: 50%;
     display: inline-block;
-    margin: 2vw 10px 0 0;
+    margin: 2vw 5px 0 0;
 }
 
 .whitedot{
@@ -117,6 +120,7 @@ a:active{
     margin-bottom: 0;
     h1,h2{
         font-size: 5vw;
+        font-weight: 500;
     }
 
     span{
@@ -182,7 +186,7 @@ main{
             width: 100%;
             transition: opacity .2s ease-in-out;
             display: block;
-            max-height: 20vh;
+            height: 20vw;
             border: solid $secondary-color;
             }
 
@@ -272,9 +276,9 @@ footer{
     background-color: $secondary-color;
     margin-top: 26vh !important;
     margin-bottom: 40px;
-    font-size: 8pt;
-    font-family: $text-font;
-    font-weight: 800;
+    font-size: 9pt;
+    font-family: $title-font;
+    font-weight: 300;
     padding: 2vh 0 2vh 0 !important;
     color: $bg-color;
     i{

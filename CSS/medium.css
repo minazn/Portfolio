@@ -40,9 +40,6 @@
   .leftmargin {
     margin-left: 0 !important;
   }
-  .thumbnail img {
-    min-height: 200px !important;
-  }
   .thumbnail-link {
     max-width: 47% !important;
   }
