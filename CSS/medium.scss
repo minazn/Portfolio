@@ -2,6 +2,12 @@
 
 @media only screen and (min-width: 765px) and (max-width: 1199px){
 
+    #call-to-action{
+    button{
+        display: none;
+    }
+}
+
     #large-nav{
         display: none !important;
     }
@@ -24,7 +30,7 @@
     main{
         width: 80% !important;
     }
-    .call-to-action{
+    #portfolio-subtitle{
         font-size: 14pt !important;
     }
     
