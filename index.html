@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Portfolio Neslihan Minaz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <button class="hamburger-shell" aria-expanded="false">
+            <div class="hamb top"></div>
+            <div class="hamb middle"></div>
+            <div class="hamb bottom"></div>
+        </button>
+
+        <nav class=".text-font-color" id="hamburger">
+            <div class="hide-hamb d-flex flex-column">
+                <a href="#hero"><i class="fas fa-home mb-5"></i></a>
+                <a href="#portfolio"><i class="fas fa-laptop mb-5"></i></a>
+                <a href="#technologys"><i class="fas fa-code mb-5"></i></a>
+                <a href="#about"><i class="far fa-address-card"></i></a>
+            </div>
+        </nav>
+
+        <nav class=".text-font-color d-flex flex-column" id="large-nav">
+            <a class="focus focus-hero" href="#hero"><i class="fas fa-home mb-5"></i></a>
+            <a class="focus focus-portfolio" href="#portfolio"><i class="fas fa-laptop mb-5"></i></a>
+            <a class="focus focus-technology" href="#technologys"><i class="fas fa-code mb-5"></i></a>
+            <a class="focus focus-about" href="#about"><i class="far fa-address-card"></i></a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="row align-items-end">
+            <div class="col text-end">
+                <h1 class="mytitle"> <span>Nesli</span>han</h1>
+                <h1 class="mytitle"> <span>M</span>inaz</h1>
+            </div>
+            <div class="col"><img src="IMG/Logo_orange.svg" alt="Logo" id="logo"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="mytitle text-end"> <span>Front</span>end </h2>
+            </div>
+            <div class="col">
+                <h2 class="mytitle" id="developer"> Developer</h2>
+            </div>
+        </div>
+        <div id="hero-subtitle">
+            <blockquote class="ps-2"><span>Transform Co</span>mplexity into Simplicity</blockquote>
+            <button class="mybutton" id="portfolio-btn"><a href="#portfolio">Portfolio</a></button>
+        </div>
+    </section>
+
+
+    <main>
+        <div class="d-flex mb-3 justify-content-center">
+            <h1 class="mysectiontitle">
+                <ul class="scrolltitle hidden" id="portfolio">
+                    <li class="dot"></li>
+                </ul>
+            </h1>
+        </div>
+
+        <p class="mytext text-center mb-lg-3 mb-md-3 call-to-action" id="portfolio-subtitle">Click on the Thumbnails, to
+            see the projects.</p>
+
+        <section class="row gap-lg-5 gap-md-4 justify-content-center pt-5" id="thumbnail-section">
+            <a class="thumbnail-link" href="CR2/HTML/home.html">
+                <div class="thumbnail" data-title="Code Review 2"
+                    data-description="My second Code Review at CodeFacotry, showing a newspaper page. Technologys: HTML & SCSS.">
+                    <img src="IMG/CR2.png" alt="Code Review 2">
+                </div>
+            </a>
+
+            <a class="thumbnail-link" href="CR3/HTML/index.html">
+                <div class="thumbnail" data-title="Code Review 3"
+                    data-description="My first Web-project with JavaScript and Bootstrap for a fictitious restaurant.">
+                    <img src="IMG/CR3.png" alt="Code Review 3">
+                </div>
+            </a>
+            <a class="thumbnail-link" href="CR6/">
+                <div class="thumbnail" data-title="Code Review 6"
+                    data-description="My first Angular project. In addition to a shopping cart function, it also includes animations.">
+                    <img src="IMG/CR6.png" alt="Code Review 6">
+                </div>
+            </a>
+            <a class="thumbnail-link" href="Team7/">
+                <div class="thumbnail" data-title="Team 7 Frontend"
+                    data-description="As a team of 4 we developed a homepage for a fictional photographer within 3.5 days.">
+                    <img src="IMG/Team7.png" alt="Frontend Project with Team 7">
+                </div>
+            </a>
+        </section>
+
+        <h3 class="mytitle leftmargin">
+            <ul class="scrolltitle hidden" id="codereview">
+                <li class="whitedot"></li>
+            </ul>
+        </h3>
+
+        <p class="myparagraph indent leftmargin" id="med-version-codereview-text">
+            At CodeFactory students hand in their projects on a weekly basis. Each project has certain assignments,
+            which are published on Friday at 9 a.m. The deadline for submitting is 6 p.m. at the following day.
+        </p>
+
+
+
+
+        <div class="d-flex mb-5 justify-content-center">
+            <h1 class="mysectiontitle">
+                <ul class="scrolltitle hidden" id="technologys">
+                    <li class="dot"></li>
+                </ul>
+            </h1>
+        </div>
+
+        <div id="technology-list">
+            <div class="mytext d-flex flex-wrap">
+                <a id="c">C</a>
+                <a id="c++">C++</a>
+                <a id="matlab">Matlab</a>
+                <a id="r">R</a>
+            </div>
+            <div class="d-flex flex-wrap justify-content-end">
+                <a id="latex">LaTex</a>
+                <a id="maple">Maple</a>
+                <a id="vba">VBA</a>
+            </div>
+            <div class="d-flex flex-wrap">
+                <a id="wordpress">Wordpress</a>
+                <a id="jimdo">Jimdo</a>
+            </div>
+            <div class="d-flex flex-wrap justify-content-evenly">
+                <a id="angular">Angular</a>
+                <a id="html">HTML5</a>
+                <a id="sql">SQL</a>
+            </div>
+            <div class="d-flex flex-wrap justify-content-between">
+                <div class="d-flex">
+                    <a id="js">JavaScript</a>
+                    <a id="ts">TypeScript</a>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <a id="css">CSS3 & SCSS</a>
+                </div>
+            </div>
+
+            <div class="mt-5" id="technology-card">
+                <h4 class="mytitle" id="technology-title">C/C++</h4>
+                <p class="mytext" id="technology-description">
+                    I started with probably one of the most popular coding languages C & C++. I mainly coded
+                    mathematical solutions such as the derivative of linear and non-linear functions, or mathematical
+                    operators for matrices. But also simple game programs like Hangman were involved..
+                </p>
+            </div>
+
+        </div>
+
+        <h1 class="mysectiontitle leftmargin">
+            <ul class="scrolltitle hidden" id="about">
+                <li class="dot"></li>
+            </ul>
+        </h1>
+        <p class="myparagraph indent leftmargin">
+            Hi, I'm Neslihan. I was born and grew up in Linz, Upper Austria, in 1991. I visited BRG Landwied high school, where
+            my only focus was on getting positive grades, except for math. Math was my absolute favorite
+            subject, because I enjoyed finding correct solutions to problems. It was like a game to me.
+            And like many people are reluctant to lose, I sat on the exercises until I found a solution. The cool
+            thing about solutions is, that it does not necessarily be clear. In other words: in most cases, there are
+            many solutions. The more challenging the tasks, the more fun the game was.
+        </p>
+        <p class="myparagraph leftmargin">
+            In my family, I was the first person graduating the A-levels and starting to study in university. Of course
+            I chose math for my studies. Then at the latest I felt the intensity of the challenge. But I stayed at it
+            and financed my studies myself as a part-time job.
+        </p>
+        <p class="myparagraph leftmargin">
+            And that's when I got into coding for the first time. My very first coding languages were C and C++,
+            followed by Matlab, Maple and R. When I got into banking, none of the languages were needed. For the
+            daily tasks I learned VBA and SQL instead. I must admit, that I am happy for having no more VBA tasks.
+            For my next employer, arithmetica, I joined a more complex software project that has been running for over
+            10 years.
+            Matlab, R and C # were the main languages ​​for the validation software.
+        </p>
+        <p class="myparagraph leftmargin">
+            In 2020, creativity began to become a fulfilling area in my life. I started writing, singing, and dancing
+            more than I'd done in my previous years. I got into web design by chance. It was then that the first seeds
+            for Fronted were sown. When I started a project in Wordpress I felt like I don't have the freedom to do
+            anything for the website, especially when it comes to animations. So I decided to learn HTML and CSS.
+            However, I was still not satisfied with the results. When I came to CodeFactory in Vienna, I quickly learned
+            JavaScript and TypeScript, because coding was nothing new to me at the time. Then I finally said
+            goodbye to the world of banking & insurance, that do look for mathematicians, and took a new direction
+            that allows me to be creative and live my simple but very fulfilling life. And when I don't hit the keys, I
+            hit the drums.
+        </p>
+
+
+    </main>
+
+    <footer class="d-flex justify-content-between align-items-center px-5 flex-wrap">
+           <a class="col-12 col-lg-1 col-md-1 mb-2" href="https://github.com/minazn"><i class="fab fa-github"></i></a>
+        <div>
+            <div class="mb-2"><i class="far fa-envelope"></i>neslihan.minaz@gmx.at</div>
+        </div>
+        <div>
+            &copy; 2021. Neslihan Minaz. All rights reserved.
+        </div>
+            <a class="mt-2" href="privacypolicy.html">Privacy Policy</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
