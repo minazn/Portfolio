@@ -1,16 +1,6 @@
 @import url("./hamburgernav.css");
 
 @media only screen and (max-width: 764px){
-
-    #call-to-action{
-        button{
-            // padding: .2rem 2rem !important;
-            // margin-bottom: 1rem !important;
-            // text-align: center;
-            // font-size: 1rem !important;
-            display: none;
-        }
-    }
  
     
     #logo{
@@ -52,14 +42,25 @@
     }
 
     #hero{
+        padding-top: 10vh !important;
         h1,h2{
-            font-size: 8vw !important;
+            font-size: 7vw !important;
+        }
+
+        #hero-subtitle{
+            margin-left: 0 !important;
+        }
+
+        #developer{
+            margin-left: -4vw !important;
         }
 
         blockquote{
             font-size: 4vw !important;
-            width: 70% !important;
-            margin-left: 22% !important;
+        }
+
+        button{
+            display: none;
         }
     }
     .indent{
@@ -108,7 +109,7 @@
 
     .myparagraph{
         width: 95% !important;
-        margin: 0 auto 0 auto !important;
+        margin: 1rem auto 0 auto !important;
         font-size: 12pt !important;
     }
 
@@ -124,7 +125,7 @@
     }
 
     #technology-list{
-        width: 70% !important;
+        width: 80% !important;
     
         a{
             font-size: 13pt !important;    

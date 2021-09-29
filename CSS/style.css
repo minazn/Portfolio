@@ -11,7 +11,7 @@ body {
   background-color: #232323 !important;
 }
 
-.text-font-color, .mytitle, .mysectiontitle, .mytext, .myparagraph, #hero blockquote {
+.text-font-color, .mytitle, .mysectiontitle, .mytext, .myparagraph, #hero #hero-subtitle blockquote {
   color: white;
 }
 
@@ -23,8 +23,30 @@ body {
   font-size: 3vw;
   text-align: center;
   letter-spacing: 3px;
-  padding-top: 17%;
+  padding: 17% 0 0 0;
+  margin: 0;
   font-weight: 400;
+}
+
+.mybutton {
+  background-color: white;
+  border: none;
+  border-radius: 5%;
+  padding: 0.4em 1em;
+}
+
+.mybutton:hover {
+  background-color: orange;
+}
+
+.mybutton a {
+  color: #232323 !important;
+  font-weight: bold;
+  font-size: clamp(12pt, 1.3rem, 3vw);
+}
+
+.mybutton a:hover {
+  color: #232323 !important;
 }
 
 .dot, .whitedot {
@@ -43,7 +65,7 @@ body {
   margin: 3vh 5px 0 0;
 }
 
-.mytext, .myparagraph, #hero blockquote {
+.mytext, .myparagraph, #hero #hero-subtitle blockquote {
   font-family: "Mulish", sans-serif !important;
 }
 
@@ -100,8 +122,9 @@ a:active {
 }
 
 #hero {
-  padding-top: 15vh;
-  margin-bottom: 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #hero h1, #hero h2 {
@@ -114,39 +137,28 @@ a:active {
 }
 
 #hero #logo {
-  width: 30%;
+  width: 60%;
+  margin-top: 6vh;
 }
 
-#hero #call-to-action {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+#hero #developer {
+  margin-left: -1vw;
 }
 
-#hero #call-to-action button {
-  background-color: beige;
-  padding: .5rem 1rem;
-  font-family: "Prompt", sans-serif;
-  font-size: 1.3rem !important;
-  border: none;
-  border-radius: 5% !important;
+#hero #hero-subtitle {
+  margin-left: 17vw;
 }
 
-#hero #call-to-action button a {
-  color: #232323 !important;
-}
-
-#hero blockquote {
-  width: 50%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 5%;
+#hero #hero-subtitle blockquote {
   font-size: 2vw;
   font-style: italic;
   border-left: solid;
   border-color: orange;
   font-weight: 200;
+}
+
+#hero #hero-subtitle button {
+  margin-top: 1vh;
 }
 
 main {
@@ -264,8 +276,8 @@ main #thumbnail-section .thumbnail:hover::after {
 }
 
 #technology-list {
-  width: 45%;
-  margin: 10% auto 0 auto;
+  width: 42%;
+  margin: 10vh auto 0 auto;
 }
 
 #technology-list a {

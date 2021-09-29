@@ -33,9 +33,31 @@ body{
     font-size: 3vw;
     text-align: center;
     letter-spacing: 3px;
-    padding-top: 17%;
+    padding: 17% 0 0 0;
+    margin: 0;
     font-weight: 400;
 
+}
+
+.mybutton{
+    background-color: $font-color;
+    border: none;
+    border-radius: 5%;
+    padding: 0.4em 1em;
+
+    &:hover{
+        background-color: $secondary-color;
+    }
+
+    a{
+        color: $bg-color !important;
+        font-weight: bold;
+        font-size: clamp(12pt, 1.3rem, 3vw);
+    }
+
+    a:hover{
+        color: $bg-color !important;
+    }
 }
 
 .dot{
@@ -120,8 +142,9 @@ a:active{
 }
 
 #hero{
-    padding-top: 15vh;
-    margin-bottom: 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     h1,h2{
         font-size: 5vw;
         font-weight: 500;
@@ -132,40 +155,31 @@ a:active{
     }
 
     #logo{
-        width: 30%;
+        width: 60%;
+        margin-top: 6vh;
     }
 
-    #call-to-action{
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-
-        button{
-            background-color: beige;
-            padding: .5rem 1rem;
-            // width: 10%;
-            font-family: $title-font;
-            font-size: 1.3rem !important;
-            border: none;
-            border-radius: 5% !important;
-        
-            a{
-                color: $bg-color !important;
-            }
-        }
+    #developer{
+        margin-left: -1vw;
     }
+
+    #hero-subtitle{
+    margin-left: 17vw;
 
     blockquote{
         @extend .mytext;
-        width: 50%;
-        display: inline-flex;
-        margin-left: 5%;
         font-size: 2vw;
         font-style: italic;
         border-left: solid;
         border-color: $secondary-color;
         font-weight: 200;
     }
+
+    button{
+        margin-top: 1vh;
+    }
+
+}
 }
 
 main{
@@ -276,8 +290,8 @@ main{
 }
 
 #technology-list{
-    width: 45%;
-    margin: 10% auto 0 auto;
+    width: 42%;
+    margin: 10vh auto 0 auto;
 
     a{
         font-size: 20pt;

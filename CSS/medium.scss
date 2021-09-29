@@ -2,11 +2,6 @@
 
 @media only screen and (min-width: 765px) and (max-width: 1199px){
 
-    #call-to-action{
-    button{
-        display: none;
-    }
-}
 
     #large-nav{
         display: none !important;
@@ -17,13 +12,17 @@
             font-size: 5vw !important;
         }
 
+        #developer{
+            margin-left: -1.5vw !important;
+        }
+
         blockquote{
             font-size: 2vw !important;
         }
     }
 
     .indent{
-        text-indent: 0 !important;
+        text-indent: 1rem !important;
        
    }
 
@@ -37,7 +36,7 @@
     .myparagraph{
         width: 80% !important;
         font-size: 12pt !important;
-        margin: 0 auto 0 auto !important;
+        margin: 1rem auto 0 auto !important;
     }
 
     .dot{
@@ -54,21 +53,16 @@
         font-size: 12pt !important;
     }
 
-    #codereview{
-        margin: 6rem 3rem 6rem 0 !important;
-    }
 
     .leftmargin{
         margin-left: 0 !important;
     }
 
+    #med-version-codereview-text{
+        text-indent: 3rem !important;
+    }
 
-    .thumbnail{
-            // img{
-            // min-height: 200px !important;
-            // } 
 
-        }
         .thumbnail-link {
             max-width: 47% !important;
         } 
@@ -84,7 +78,7 @@
 
       footer{
           div{
-              padding-top: 10px;
+              padding: 3vh 0;
           }
       }
     
