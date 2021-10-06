@@ -18,8 +18,8 @@ class Technology {
   }
 }
 
-new Technology("C/C++", "c", "I started with probably one of the most popular coding languages C & C++. I mainly coded mathematical solutions such as the derivative of linear and non-linear functions, or mathematical operators for matrices. But also simple game programs like Hangman were involved.");
-new Technology("C/C++", "c++", "I started with probably one of the most popular coding languages C & C++. I mainly coded mathematical solutions such as the derivative of linear and non-linear functions, or mathematical operators for matrices. But also simple game programs like Hangman were involved.");
+new Technology("C/C++", "c", "I started with probably one of the oldest coding languages C & C++. I mainly coded mathematical solutions such as the derivative of linear and non-linear functions, or mathematical operators for matrices. But also simple game programs like Hangman were involved.");
+new Technology("C/C++", "c++", "I started with probably one of the oldest coding languages C & C++. I mainly coded mathematical solutions such as the derivative of linear and non-linear functions, or mathematical operators for matrices. But also simple game programs like Hangman were involved.");
 new Technology("Matlab","matlab","All necessary mathematical operators are already predefined in Matlab. Here I  solved more complex math problems and created graphs. At my former employer arithmetica, statistical evaluations such as distribution fitting were my main tasks with Matlab. And it was my first time coding object oriented.");
 new Technology("R", "r", "R is probably the most widely used technology among statisticians. I used R to create statistical diagrams and evaluations both at university and for my former employee. That's how I discovered the world of librarys for the first time.");
 new Technology("LaTex", "latex", "When you want to write a long, technical document, LaTex becomes a good friend. Many symbols are predefined with simple key combinations and are easier to use than in other text editors such as Word. My bachelor thesis wasn't the only document, that I wrote with LaTex.");
@@ -46,6 +46,14 @@ function toggleMenu() {
 	$('.hamburger-shell').toggleClass('menu-open');
   $('#hamburger').toggleClass('menu-open');
 }
+
+//scroll to portfolio after clicking button
+document.getElementById("portfolio-btn").addEventListener("click", function(){ scrollTo("portfolio")});
+
+function scrollTo(hash) {
+  location.hash = "#" + hash;
+}
+
 
 $(function() {
 

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Portfolio Neslihan Minaz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<style>
+
+    main{
+        width: 60% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        min-height: 70vh !important;
+    }
+
+    h1 {
+        color: orange !important;
+    }
+
+    img {
+        max-width: 20% !important;
+    }
+
+    span {
+        color: orange;
+    }
+
+    p {
+        width: 100%;
+    }
+
+    a:hover{
+        color: #232323 !important;
+    }
+
+    @media only screen and (min-width: 765px) and (max-width: 1199px){
+        main{
+        width: 80% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        min-height: 70vh !important;
+         }
+      p{
+          width: 100% !important;
+      }   
+    }
+
+    @media only screen and (max-width: 764px){
+        img{
+            max-width: 100% !important;
+        };
+
+    }
+</style>
+
+<body>
+
+    <main class="row justify-content-center align-items-center">
+        <div class="col-lg-6 col-md-6 col-12 pt-sm-5 pt-md-0 pt-lg-0 pt-5">
+            <h1 class="mytitle">Hello there!</h1>
+            <p class="mytext">
+                I have <span>very good news</span> for you! As this website is a pure Frontend project, no data
+                from you will be stored.
+            </p>
+            <button class="mybutton"><a href="index.html">Go back</a> </button>
+        </div>
+        <img class="col-lg-6 col-md-6 ol-12" src="IMG/Logo_orange.svg" alt="Logo" id="logo">
+        
+    </main>
+
+    <footer class="row justify-content-between">
+        <div class="d-flex col-lg-4 col-md-12 justify-content-center align-items-center"><i
+                class="far fa-envelope"></i>neslihan.minaz@gmx.at</div>
+        <div class="d-flex col-lg-4 col-md-12 justify-content-center align-items-center"> &copy; 2021. Neslihan Minaz.
+            All rights reserved.</div>
+        <div class="d-flex col-lg-4 col-md-12 justify-content-center align-items-center">Privacy Policy</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- <script src="JS/script.js"></script> -->
+
+    <script>
+        function goToIndex(){
+            window.location.href = "index.html";
+        }
+
+        document.getElementsByTagName("button")[0].addEventListener("click", function(){goToIndex()});        
+    </script>
+</body>
