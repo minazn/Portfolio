@@ -142,9 +142,11 @@ a:active{
 }
 
 #hero{
-    width: 80%;
+    width: clamp(300px,50%,1000px);
     margin-left: auto;
     margin-right: auto;
+    padding-top: clamp(250px,30vh,1000px);
+    height: 100vh;
     h1,h2{
         font-size: 5vw;
         font-weight: 500;
@@ -155,8 +157,11 @@ a:active{
     }
 
     #logo{
-        width: 60%;
-        margin-top: 6vh;
+        width: clamp(250px,50%,1000px);
+        position: absolute;
+        right: 10vw;
+        top: clamp(100px,0%,1000px);
+        opacity: 0.2;
     }
 
     #developer{
@@ -164,7 +169,6 @@ a:active{
     }
 
     #hero-subtitle{
-    margin-left: 17vw;
 
     blockquote{
         @extend .mytext;
@@ -290,7 +294,7 @@ main{
 }
 
 #technology-list{
-    width: 42%;
+    width: clamp(600px,50%,900px);
     margin: 10vh auto 0 auto;
 
     a{

@@ -3,9 +3,9 @@
 @media only screen and (max-width: 764px){
  
     
-    #logo{
-        width: 50% !important;
-    }
+    // #logo{
+    //     width: 50% !important;
+    // }
 
     header{
         .hamburger-shell {  
@@ -42,26 +42,15 @@
     }
 
     #hero{
-        padding-top: 10vh !important;
+        // padding-top: 10vh !important;
         h1,h2{
             font-size: 7vw !important;
-        }
-
-        #hero-subtitle{
-            margin-left: 0 !important;
-        }
-
-        #developer{
-            margin-left: -4vw !important;
         }
 
         blockquote{
             font-size: 4vw !important;
         }
 
-        button{
-            display: none;
-        }
     }
     .indent{
         text-indent: 0 !important;

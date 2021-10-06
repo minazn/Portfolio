@@ -6,9 +6,6 @@
   #hero h1, #hero h2 {
     font-size: 5vw !important;
   }
-  #hero #developer {
-    margin-left: -1.5vw !important;
-  }
   #hero blockquote {
     font-size: 2vw !important;
   }
