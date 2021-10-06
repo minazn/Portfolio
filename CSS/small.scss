@@ -1,11 +1,7 @@
 @import url("./hamburgernav.css");
 
 @media only screen and (max-width: 764px){
- 
-    
-    // #logo{
-    //     width: 50% !important;
-    // }
+
 
     header{
         .hamburger-shell {  
@@ -42,7 +38,6 @@
     }
 
     #hero{
-        // padding-top: 10vh !important;
         h1,h2{
             font-size: 7vw !important;
         }
